@@ -10,8 +10,8 @@ return [
 
     // Admin Credentials
     'admin_name' => env('ADMIN_NAME') ?: 'admin',
-    'admin_email' => env('ADMIN_EMAIL') ?: 'admin@pigjian.com',
-    'admin_password' => env('ADMIN_PASSWORD') ?: 'admin',
+    'admin_email' => env('ADMIN_EMAIL') ?: '835596913@qq.com',
+    'admin_password' => env('ADMIN_PASSWORD') ?: 'cs13339976167',
 
     // Default Avatar
     'default_avatar' => env('DEFAULT_AVATAR') ?: '/images/default.png',
@@ -24,8 +24,8 @@ return [
 
     // Meta
     'meta' => [
-        'keywords' => 'PJ Blog,blog,pigjian,laravel,vuejs',
-        'description' => 'Nothing is impossible in PJ Blog'
+        'keywords' => 'blog,laravel,vuejs,java,golang',
+        'description' => 'Programming is an art form'
     ],
 
     // Social Share
@@ -44,8 +44,8 @@ return [
 
     // Article Page
     'article' => [
-        'title'       => 'Nothing is impossible.',
-        'description' => 'https://pigjian.com',
+        'title'       => 'Programming is an art form.',
+        'description' => 'https://nickky.xyz',
         'number'      => 15,
         'sort'        => 'desc',
         'sortColumn'  => 'published_at',
@@ -62,15 +62,15 @@ return [
     'footer' => [
         'github' => [
             'open' => true,
-            'url'  => 'https://github.com/jcc',
+            'url'  => 'https://github.com/Caisen1988',
         ],
-        'twitter' => [
-            'open' => true,
-            'url'  => 'https://twitter.com/pigjian'
-        ],
-        'meta' => '© PJ Blog 2016. Powered By Jiajian Chan',
+//        'twitter' => [
+//            'open' => true,
+//            'url'  => 'https://twitter.com/pigjian'
+//        ],
+        'meta' => '© Nick Cai Blog 2020.',
     ],
 
-    'license' => 'Powered By Jiajian Chan.<br/>This article is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
+    'license' => 'This article is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
 
 ];

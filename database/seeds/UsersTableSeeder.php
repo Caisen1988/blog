@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
                 'password' => Hash::make(config('blog.admin_password')),
                 'status' => true,
                 'is_admin' => true,
-                'confirm_code' => str_random(64),
+                'confirm_code' => Str::random(64),
                 'created_at'  => Carbon::now(),
                 'updated_at'  => Carbon::now()
             ]
