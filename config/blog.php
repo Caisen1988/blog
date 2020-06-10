@@ -9,7 +9,7 @@ return [
     'super_admin' => env('APP_SUPER_ADMIN') ?: 1,
 
     // Admin Credentials
-    'admin_name' => env('ADMIN_NAME') ?: 'admin',
+    'admin_name' => env('ADMIN_NAME') ?: 'NickCai',
     'admin_email' => env('ADMIN_EMAIL') ?: '835596913@qq.com',
     'admin_password' => env('ADMIN_PASSWORD') ?: 'cs13339976167',
 
