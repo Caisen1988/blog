@@ -1,5 +1,9 @@
 <?php
 
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+
+use Illuminate\Support\Str;
+
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -46,7 +50,7 @@ $factory->define(App\Article::class, function (Faker\Generator $faker) {
         'user_id'      => $user_ids,
         'category_id'  => $category_ids,
         'last_user_id' => $user_ids,
-        'slug'     => str_slug($title),
+        'slug'     => Str::slug($title),
         'title'    => $title,
         'subtitle' => strtolower($title),
         'content'  => $faker->paragraph,
