@@ -24,11 +24,11 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-//$factory->defineAs(App\User::class, 'admin', function () use ($factory) {
-  //  $user = $factory->raw(App\User::class);
+$factory->state(App\User::class, 'admin', function () use ($factory) {
+    $user = $factory->raw(App\User::class);
 
-    //return array_merge($user, ['is_admin' => 1, 'password' => bcrypt('admin')]);
-//});
+    return array_merge($user, ['is_admin' => 1, 'password' => bcrypt('admin')]);
+});
 
 $factory->define(App\Category::class, function (Faker\Generator $faker) {
     return [
